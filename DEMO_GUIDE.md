@@ -4,6 +4,11 @@
 
 A pure-NumPy implementation of three gradient-based optimizers (BGD, SGD+Momentum, Adam), a feedforward neural network with backpropagation, and systematic comparisons on analytical functions and MNIST.
 
+## Quick View (No Setup Required)
+
+A fully executed notebook with all outputs is available as a PDF:  
+[`notebooks/optimizer_deep_dive.pdf`](notebooks/optimizer_deep_dive.pdf)
+
 ## Running the Demo
 
 ### 1. Setup (~1 min)

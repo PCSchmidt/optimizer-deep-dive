@@ -38,6 +38,11 @@ optimizer-deep-dive/
 - **He / Xavier initialization**: Proper weight scaling prevents vanishing/exploding gradients
 - **Loss landscape**: 3D visualization of the loss surface around trained solutions
 
+## PDF Report
+
+A fully executed notebook with all outputs is available as a PDF:  
+[`notebooks/optimizer_deep_dive.pdf`](notebooks/optimizer_deep_dive.pdf)
+
 ## Quick Start
 
 ```bash
