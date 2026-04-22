@@ -12,6 +12,19 @@ A from-scratch study of **gradient descent, SGD with momentum, and Adam** optimi
 | SGD + Momentum | ~90% | Moderate | No |
 | Adam (lr=0.001) | ~93% | Fast | Yes |
 
+## Training Pipeline
+
+```mermaid
+flowchart LR
+    A["MNIST Dataset\n60K images, 28x28"] --> B["MLP\n784 - 256 - 128 - 10\npure NumPy"]
+    B --> C["Forward Pass\n+ Backpropagation\nChain Rule"]
+    C --> D{"Optimizer"}
+    D -->|"SGD lr=0.01"| E["~85% accuracy\nSlow convergence"]
+    D -->|"SGD + Momentum beta=0.9"| F["~90% accuracy\nModerate convergence"]
+    D -->|"Adam lr=0.001"| G["~93% accuracy\nFast convergence"]
+    E & F & G --> H["Loss Landscape\nVisualization\nContour Plots"]
+```
+
 ## Project Structure
 
 ```
